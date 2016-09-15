@@ -34,12 +34,7 @@ var GF = function(){
     var inputStates = {};
 
     // The monster !
-    var monster = {
-      x:200,
-      y:200,
-      speed:100, // pixels/s this time !
-      boundingCircleRadius: 70  
-    };
+    var monster = new Monster(200, 200, 100, 70);
 
     var img = new Image();   // Crée un nouvel objet Image
     img.src = 'sprite_jeu_web/player.png'; // Définit le chemin vers sa source
